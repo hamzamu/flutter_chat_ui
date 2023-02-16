@@ -68,10 +68,13 @@ class _ChatUiState extends State<ChatUi> {
               margin: EdgeInsets.all(10),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
-                  color: Colors.grey[300]),
-              padding: EdgeInsets.all(12),
+                  color: Colors.grey[200]),
+              padding: EdgeInsets.all(10),
               child: TextField(
                 decoration: InputDecoration(
+                  suffixIcon: IconButton(
+                      onPressed: () => {print('h')}, icon: Icon(Icons.send)),
+                  // icon: Icon(Icons.send),
                   hintText: 'Write your message',
                   border: InputBorder.none,
                   fillColor: Colors.white,
